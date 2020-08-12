@@ -52,7 +52,7 @@ async function getQuote() {
 function tweetQuote() {
   const quote = quoteText.innerText;
   const author = authorText.innerText;
-  const twitterUrl = `https://twitter.com/Zelal_Eizaldeen`;
+  const twitterUrl = `https://twitter.com/intent/tweet?text=${quote} - ${author}`;
   window.open(twitterUrl, '_blank');
 }
 
